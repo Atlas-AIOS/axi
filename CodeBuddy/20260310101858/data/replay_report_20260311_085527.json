@@ -1,0 +1,903 @@
+{
+  "report_id": "replay_20260311_085527",
+  "timestamp": "2026-03-11T08:55:27.239208",
+  "total_cases": 50,
+  "summary": {
+    "unchanged": 27,
+    "upgraded": 0,
+    "downgraded": 0,
+    "added_rounds": 0,
+    "blocked_at_gate": 23
+  },
+  "results": [
+    {
+      "case_id": "historical_0000",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 32.17067751483475,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0001",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0002",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0003",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0004",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 33.23817357096251,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0005",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0006",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 42.72861372003396,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0007",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0008",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0009",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0010",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0011",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0012",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 44.17498485937983,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0013",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 41.522607844754454,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0014",
+      "original_status": "pending",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 3,
+      "review_score": 61.26850443374724,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "需要 3 轮协商才能得出结论",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间",
+        "大量条件支持表明需要更多澄清"
+      ]
+    },
+    {
+      "case_id": "historical_0015",
+      "original_status": "pending",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 72.30595257517513,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0016",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 30.574828216212346,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0017",
+      "original_status": "pending",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 5,
+      "review_score": 62.2484575906494,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "需要 5 轮协商才能得出结论",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间",
+        "大量条件支持表明需要更多澄清"
+      ]
+    },
+    {
+      "case_id": "historical_0018",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0019",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0020",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0021",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 42.214143236403245,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0022",
+      "original_status": "pending",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 5,
+      "review_score": 60.50055582725784,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "需要 5 轮协商才能得出结论",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间",
+        "大量条件支持表明需要更多澄清"
+      ]
+    },
+    {
+      "case_id": "historical_0023",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0024",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0025",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 32.69354277181907,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0026",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0027",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 45.31364799164726,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0028",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0029",
+      "original_status": "pending",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 69.72902293858756,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0030",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0031",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0032",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 41.27229425947395,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0033",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0034",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0035",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0036",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0037",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 45.471924904058156,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0038",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 37.22213230991918,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0039",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0040",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0041",
+      "original_status": "pending",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 4,
+      "review_score": 69.94186850539589,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "需要 4 轮协商才能得出结论",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间",
+        "大量条件支持表明需要更多澄清"
+      ]
+    },
+    {
+      "case_id": "historical_0042",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 38.500181066796415,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0043",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 37.39181452155658,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0044",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 1,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0045",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0046",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 39.1100679698825,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0047",
+      "original_status": "approved",
+      "replay_status": "pending",
+      "verdict": "unchanged",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 95,
+      "review_passed": true,
+      "gate_status": "conditional",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0048",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 41.230986111739156,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    },
+    {
+      "case_id": "historical_0049",
+      "original_status": "blocked",
+      "replay_status": "blocked",
+      "verdict": "blocked_at_gate",
+      "alignment_passed": false,
+      "deliberation_rounds": 2,
+      "review_score": 31.073312996793717,
+      "review_passed": false,
+      "gate_status": "closed",
+      "differences": [
+        "在 Goal Alignment Phase 发现问题",
+        "在决策门控处被阻止"
+      ],
+      "insights": [
+        "建议：增加议题对齐环节，避免在模糊问题上浪费时间"
+      ]
+    }
+  ],
+  "key_findings": [
+    "新系统与历史结论一致率: 54.0% (27/50)",
+    "决策门控成功拦截了 23 个高风险提案",
+    "平均需要 1.9 轮协商"
+  ],
+  "recommendations": [
+    "建议定期用历史案例验证系统决策质量"
+  ]
+}

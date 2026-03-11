@@ -1,0 +1,2 @@
+{"observation_id": "OBS-5675349b858e", "meeting_id": "MTG-004", "risk_validated": false, "validated_at": "2026-03-11T09:31:52.960563", "notes": "Demo observation for MTG-004\n[人工覆盖] approved: 业务确认：此提案已通过法务审核，建议批准\n[风险验证] 误拦: 30天后复盘：该提案运行正常，无风险暴露"}
+{"observation_id": "OBS-bffb8ffcde62", "meeting_id": "MTG-008", "risk_validated": true, "validated_at": "2026-03-11T09:31:52.960659", "notes": "Demo observation for MTG-008\n[风险验证] 确认有风险: 30天后复盘：该提案执行后出现争议，确认有风险"}

@@ -1,0 +1,364 @@
+{
+  "shadow_id": "SHADOW-20260311-DEMO",
+  "status": "active",
+  "config": {
+    "deliberation_threshold": 75.0,
+    "review_threshold": 80.0,
+    "max_defects": 1,
+    "support_weight": 1.0,
+    "oppose_penalty": 1.5,
+    "veto_penalty": 3.0
+  },
+  "metrics": {
+    "start_date": "2026-03-11T09:31:52.959248",
+    "end_date": "2026-03-11T09:31:52.960840",
+    "total_days": 0,
+    "total_meetings": 10,
+    "completed_meetings": 10,
+    "false_block_rate": 0.2,
+    "review_disagreement_rate": 0.0,
+    "avg_extra_rounds": 0.4,
+    "human_override_rate": 0.1,
+    "accepted_risk_miss_rate": 0.5,
+    "decision_alignment_rate": 0.6,
+    "legacy_approved_shadow_blocked": 2,
+    "legacy_blocked_shadow_approved": 1,
+    "both_approved": 5,
+    "both_blocked": 2,
+    "accepted_risk_cases": 2,
+    "validated_risk_cases": 2,
+    "confirmed_risk_cases": 1,
+    "false_positive_risk_cases": 1,
+    "evaluation_status": "pending",
+    "recommendation": "pending"
+  },
+  "acceptance_criteria": {
+    "max_false_block_rate": 0.15,
+    "min_decision_alignment": 0.75,
+    "max_avg_extra_rounds": 0.4,
+    "min_meetings": 50,
+    "min_days": 30
+  },
+  "recent_observations": [
+    {
+      "observation_id": "OBS-7ce44121c9f4",
+      "meeting_id": "MTG-001",
+      "timestamp": "2026-03-11T09:31:52.959319",
+      "legacy_decision": "approved",
+      "shadow_decision": "approved",
+      "decision_aligned": true,
+      "false_block_detected": false,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 0,
+      "human_override": false,
+      "accepted_risk_detected": false,
+      "deliberation_score": 85,
+      "review_score": 88,
+      "shadow_confidence": 0.9,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "pass",
+          "score": 85
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "pass",
+          "score": 88
+        }
+      ],
+      "risk_validated": null,
+      "validated_at": null,
+      "notes": "Demo observation for MTG-001",
+      "logged_at": "2026-03-11T09:31:52.959329"
+    },
+    {
+      "observation_id": "OBS-7e22fd6dbb46",
+      "meeting_id": "MTG-002",
+      "timestamp": "2026-03-11T09:31:52.959864",
+      "legacy_decision": "approved",
+      "shadow_decision": "approved",
+      "decision_aligned": true,
+      "false_block_detected": false,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 0,
+      "human_override": false,
+      "accepted_risk_detected": false,
+      "deliberation_score": 78,
+      "review_score": 82,
+      "shadow_confidence": 0.85,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "pass",
+          "score": 78
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "pass",
+          "score": 82
+        }
+      ],
+      "risk_validated": null,
+      "validated_at": null,
+      "notes": "Demo observation for MTG-002",
+      "logged_at": "2026-03-11T09:31:52.959868"
+    },
+    {
+      "observation_id": "OBS-2e1c8d7e1256",
+      "meeting_id": "MTG-003",
+      "timestamp": "2026-03-11T09:31:52.959926",
+      "legacy_decision": "rejected",
+      "shadow_decision": "rejected",
+      "decision_aligned": true,
+      "false_block_detected": false,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 1,
+      "human_override": false,
+      "accepted_risk_detected": false,
+      "deliberation_score": 45,
+      "review_score": 42,
+      "shadow_confidence": 0.95,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "fail",
+          "score": 45
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "fail",
+          "score": 42
+        }
+      ],
+      "risk_validated": null,
+      "validated_at": null,
+      "notes": "Demo observation for MTG-003",
+      "logged_at": "2026-03-11T09:31:52.959930"
+    },
+    {
+      "observation_id": "OBS-5675349b858e",
+      "meeting_id": "MTG-004",
+      "timestamp": "2026-03-11T09:31:52.959982",
+      "legacy_decision": "approved",
+      "shadow_decision": "rejected",
+      "decision_aligned": false,
+      "false_block_detected": true,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 1,
+      "human_override": true,
+      "accepted_risk_detected": true,
+      "deliberation_score": 72,
+      "review_score": 68,
+      "shadow_confidence": 0.85,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "fail",
+          "score": 72
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "fail",
+          "score": 68
+        }
+      ],
+      "risk_validated": false,
+      "validated_at": "2026-03-11T09:31:52.960563",
+      "notes": "Demo observation for MTG-004\n[人工覆盖] approved: 业务确认：此提案已通过法务审核，建议批准\n[风险验证] 误拦: 30天后复盘：该提案运行正常，无风险暴露",
+      "logged_at": "2026-03-11T09:31:52.959986"
+    },
+    {
+      "observation_id": "OBS-9ab37b3da84e",
+      "meeting_id": "MTG-005",
+      "timestamp": "2026-03-11T09:31:52.960068",
+      "legacy_decision": "approved",
+      "shadow_decision": "approved",
+      "decision_aligned": true,
+      "false_block_detected": false,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 0,
+      "human_override": false,
+      "accepted_risk_detected": false,
+      "deliberation_score": 90,
+      "review_score": 92,
+      "shadow_confidence": 0.92,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "pass",
+          "score": 90
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "pass",
+          "score": 92
+        }
+      ],
+      "risk_validated": null,
+      "validated_at": null,
+      "notes": "Demo observation for MTG-005",
+      "logged_at": "2026-03-11T09:31:52.960072"
+    },
+    {
+      "observation_id": "OBS-fc3b255e5fcd",
+      "meeting_id": "MTG-006",
+      "timestamp": "2026-03-11T09:31:52.960125",
+      "legacy_decision": "conditional_approved",
+      "shadow_decision": "approved",
+      "decision_aligned": false,
+      "false_block_detected": false,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 0,
+      "human_override": false,
+      "accepted_risk_detected": false,
+      "deliberation_score": 80,
+      "review_score": 85,
+      "shadow_confidence": 0.88,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "pass",
+          "score": 80
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "pass",
+          "score": 85
+        }
+      ],
+      "risk_validated": null,
+      "validated_at": null,
+      "notes": "Demo observation for MTG-006",
+      "logged_at": "2026-03-11T09:31:52.960128"
+    },
+    {
+      "observation_id": "OBS-ae30edab9c2f",
+      "meeting_id": "MTG-007",
+      "timestamp": "2026-03-11T09:31:52.960186",
+      "legacy_decision": "rejected",
+      "shadow_decision": "rejected",
+      "decision_aligned": true,
+      "false_block_detected": false,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 1,
+      "human_override": false,
+      "accepted_risk_detected": false,
+      "deliberation_score": 30,
+      "review_score": 35,
+      "shadow_confidence": 0.9,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "fail",
+          "score": 30
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "fail",
+          "score": 35
+        }
+      ],
+      "risk_validated": null,
+      "validated_at": null,
+      "notes": "Demo observation for MTG-007",
+      "logged_at": "2026-03-11T09:31:52.960190"
+    },
+    {
+      "observation_id": "OBS-bffb8ffcde62",
+      "meeting_id": "MTG-008",
+      "timestamp": "2026-03-11T09:31:52.960237",
+      "legacy_decision": "approved",
+      "shadow_decision": "requires_deliberation",
+      "decision_aligned": false,
+      "false_block_detected": true,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 1,
+      "human_override": false,
+      "accepted_risk_detected": true,
+      "deliberation_score": 70,
+      "review_score": 65,
+      "shadow_confidence": 0.88,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "fail",
+          "score": 70
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "fail",
+          "score": 65
+        }
+      ],
+      "risk_validated": true,
+      "validated_at": "2026-03-11T09:31:52.960659",
+      "notes": "Demo observation for MTG-008\n[风险验证] 确认有风险: 30天后复盘：该提案执行后出现争议，确认有风险",
+      "logged_at": "2026-03-11T09:31:52.960241"
+    },
+    {
+      "observation_id": "OBS-dee7cd00b1cc",
+      "meeting_id": "MTG-009",
+      "timestamp": "2026-03-11T09:31:52.960304",
+      "legacy_decision": "approved",
+      "shadow_decision": "approved",
+      "decision_aligned": true,
+      "false_block_detected": false,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 0,
+      "human_override": false,
+      "accepted_risk_detected": false,
+      "deliberation_score": 88,
+      "review_score": 90,
+      "shadow_confidence": 0.91,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "pass",
+          "score": 88
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "pass",
+          "score": 90
+        }
+      ],
+      "risk_validated": null,
+      "validated_at": null,
+      "notes": "Demo observation for MTG-009",
+      "logged_at": "2026-03-11T09:31:52.960308"
+    },
+    {
+      "observation_id": "OBS-19e959546436",
+      "meeting_id": "MTG-010",
+      "timestamp": "2026-03-11T09:31:52.960355",
+      "legacy_decision": "rejected",
+      "shadow_decision": "approved",
+      "decision_aligned": false,
+      "false_block_detected": false,
+      "review_disagreement": false,
+      "extra_rounds_suggested": 0,
+      "human_override": false,
+      "accepted_risk_detected": false,
+      "deliberation_score": 75,
+      "review_score": 80,
+      "shadow_confidence": 0.75,
+      "gate_checks": [
+        {
+          "check_name": "deliberation_minimum",
+          "status": "pass",
+          "score": 75
+        },
+        {
+          "check_name": "review_minimum",
+          "status": "pass",
+          "score": 80
+        }
+      ],
+      "risk_validated": null,
+      "validated_at": null,
+      "notes": "Demo observation for MTG-010",
+      "logged_at": "2026-03-11T09:31:52.960358"
+    }
+  ]
+}

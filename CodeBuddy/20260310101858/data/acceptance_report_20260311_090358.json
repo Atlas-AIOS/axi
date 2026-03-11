@@ -1,0 +1,124 @@
+{
+  "report_id": "acceptance_20260311_090358",
+  "timestamp": "2026-03-11T09:03:58.032563",
+  "overall_status": "fail",
+  "metrics": {
+    "total_cases": 50,
+    "by_original_decision": {
+      "approved": {
+        "total": 27,
+        "retained": 0,
+        "blocked": 27,
+        "retention_rate": 0.0
+      },
+      "blocked": {
+        "total": 17,
+        "retained": 17,
+        "unblocked": 0,
+        "retention_rate": 1.0
+      }
+    },
+    "metrics": {
+      "false_block_rate": {
+        "value": 1.0,
+        "status": "fail",
+        "threshold": "≤ 15%"
+      },
+      "risk_intercept_rate": {
+        "value": 0.6388888888888888,
+        "status": "conditional",
+        "threshold": "≥ 70%"
+      },
+      "deliberation_overhead": {
+        "extra_rounds_ratio": {
+          "value": 0.72,
+          "threshold": "≤ 40%"
+        },
+        "avg_rounds_increase": {
+          "value": 0.8999999999999999,
+          "threshold": "≤ 1.0"
+        },
+        "status": "fail"
+      }
+    },
+    "by_scenario": {
+      "strong_opposition": {
+        "total": 9,
+        "unchanged": 0,
+        "blocked": 9,
+        "approved": 0
+      },
+      "strong_support": {
+        "total": 7,
+        "unchanged": 7,
+        "blocked": 0,
+        "approved": 0
+      },
+      "moderate_support": {
+        "total": 8,
+        "unchanged": 8,
+        "blocked": 0,
+        "approved": 0
+      },
+      "opposition_with_veto": {
+        "total": 8,
+        "unchanged": 0,
+        "blocked": 8,
+        "approved": 0
+      },
+      "overwhelming_support": {
+        "total": 7,
+        "unchanged": 7,
+        "blocked": 0,
+        "approved": 0
+      },
+      "balanced": {
+        "total": 4,
+        "unchanged": 0,
+        "blocked": 4,
+        "approved": 0
+      },
+      "conditional_heavy": {
+        "total": 7,
+        "unchanged": 5,
+        "blocked": 2,
+        "approved": 0
+      }
+    },
+    "intercept_points": {
+      "goal_alignment": 23,
+      "deliberation_low_score": 0,
+      "third_party_review": 0,
+      "decision_gate": 0
+    }
+  },
+  "checks": {
+    "passed": [
+      "Blocked Retention: 100.0% ≥ 80%"
+    ],
+    "failed": [
+      "False-Block Rate: 100.0% > 15%",
+      "Approved Retention: 0.0% < 75%",
+      "Deliberation Overhead: Extra rounds 72.0%, Avg increase 0.9"
+    ],
+    "conditional": [
+      "Risk-Intercept Rate: 63.9% (threshold: 70%)"
+    ]
+  },
+  "key_findings": [
+    "Overall consistency: 54.0% (27/50)",
+    "False blocks: 27 approved cases were blocked",
+    "High-risk intercept: 23/36 (63.9%)",
+    "Scenario 'strong_opposition': 100.0% blocked (9/9)",
+    "Scenario 'strong_support': 0.0% blocked (0/7)",
+    "Scenario 'moderate_support': 0.0% blocked (0/8)",
+    "Scenario 'opposition_with_veto': 100.0% blocked (8/8)",
+    "Scenario 'overwhelming_support': 0.0% blocked (0/7)",
+    "Scenario 'conditional_heavy': 28.6% blocked (2/7)",
+    "Intercept at goal_alignment: 100.0% (23/23)",
+    "Intercept at deliberation_low_score: 0.0% (0/23)",
+    "Intercept at third_party_review: 0.0% (0/23)",
+    "Intercept at decision_gate: 0.0% (0/23)"
+  ],
+  "risk_cases": []
+}

@@ -1,0 +1,59 @@
+{
+  "meeting_id": "council_!demo_matrix.org_20260311_083550",
+  "topic": "是否集成 ConsensusPredictor",
+  "alignment_brief": {
+    "topic": "是否集成 ConsensusPredictor",
+    "problem_definition": "评估 ConsensusPredictor 是否达到生产环境集成标准",
+    "success_criteria": [
+      "ECE<0.22",
+      "Rolling ECE<0.18",
+      "High-conf error<18%",
+      "200+ samples"
+    ],
+    "hard_constraints": [
+      "不影响主逻辑",
+      "必须通过影子模式",
+      "门槛不可更改"
+    ],
+    "known_divergences": [
+      "模型校准问题",
+      "输出范围受限"
+    ],
+    "created_at": "2026-03-11T08:35:50.502846"
+  },
+  "alignment_status": "completed",
+  "current_round": 2,
+  "max_rounds": 5,
+  "round_summaries": [
+    {
+      "round_id": 1,
+      "status": "deliberation",
+      "proposals": [
+        "模型基本可用",
+        "建议启动影子模式"
+      ],
+      "counter_arguments": [
+        "ECE超标",
+        "输出范围受限"
+      ],
+      "unresolved_issues": [
+        "如何修复欠自信",
+        "是否需重训练"
+      ],
+      "blocking_demands": [
+        "必须解决校准问题"
+      ],
+      "conditions": [
+        "修复后可考虑"
+      ],
+      "score": 70.0
+    }
+  ],
+  "review_score": 70.0,
+  "review_passed": false,
+  "review_reports": [],
+  "continue_deliberation": true,
+  "message_log": [],
+  "final_status": "pending",
+  "execution_gate_passed": false
+}

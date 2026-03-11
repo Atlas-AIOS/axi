@@ -1,0 +1,115 @@
+{
+  "meeting_id": "demo_001",
+  "topic": "是否集成 ConsensusPredictor 到生产环境",
+  "alignment_brief": {
+    "topic": "是否集成 ConsensusPredictor 到生产环境",
+    "problem_definition": "评估 ConsensusPredictor 是否达到生产环境集成标准",
+    "success_criteria": [
+      "ECE < 0.22",
+      "Rolling ECE(50) < 0.18",
+      "High-conf error rate < 18%",
+      "200+ 真实样本验证"
+    ],
+    "hard_constraints": [
+      "不能影响现有 Python 主逻辑",
+      "必须通过影子模式验证",
+      "决策框架门槛不可更改"
+    ],
+    "known_divergences": [
+      "模型校准问题：严重欠自信",
+      "输出范围受限：[0.26, 0.38]"
+    ],
+    "created_at": "2026-03-11T08:27:19.546001"
+  },
+  "alignment_status": "completed",
+  "current_round": 3,
+  "max_rounds": 3,
+  "round_summaries": [
+    {
+      "round_id": 1,
+      "status": "deliberation",
+      "proposals": [
+        "基于 Round 19 训练的 ConsensusPredictor 已达到基本可用状态",
+        "建议启动影子模式进行生产环境验证"
+      ],
+      "counter_arguments": [
+        "ECE 0.37 远超门槛 0.22，校准不合格",
+        "输出范围 [0.26, 0.38] 无法形成有效概率分层"
+      ],
+      "unresolved_issues": [
+        "如何修复模型欠自信问题",
+        "是否需要重新训练或调整架构"
+      ],
+      "blocking_demands": [
+        "必须解决校准问题才能进入影子模式"
+      ],
+      "conditions": [
+        "如果校准问题修复，可考虑继续"
+      ],
+      "score": 70.0
+    },
+    {
+      "round_id": 2,
+      "status": "deliberation",
+      "proposals": [
+        "放弃当前模型，保持 Python 主逻辑",
+        "ConsensusPredictor 退出升级候选"
+      ],
+      "counter_arguments": [],
+      "unresolved_issues": [],
+      "blocking_demands": [],
+      "conditions": [],
+      "score": 93.0
+    }
+  ],
+  "review_score": 93.0,
+  "review_passed": false,
+  "review_reports": [
+    {
+      "reviewer_id": "钟馗",
+      "timestamp": "2026-03-11T08:27:19.546277",
+      "scores": {
+        "goal_alignment": 17.8,
+        "risk_closure": 15.8,
+        "executability": 17.8,
+        "counter_absorption": 17.8,
+        "audit_completeness": 17.8
+      },
+      "total_score": 87.0,
+      "defects": [
+        "2 unresolved issues remain",
+        "1 blocking demands unaddressed"
+      ],
+      "required_revisions": [
+        "Resolve all pending questions",
+        "Address all blocking concerns"
+      ],
+      "passed": false
+    }
+  ],
+  "continue_deliberation": true,
+  "message_log": [
+    {
+      "message_id": "msg_0001",
+      "timestamp": "2026-03-11T08:27:19.546138",
+      "sender_id": "LOGOS",
+      "receiver_id": "Casey",
+      "message_type": "challenge",
+      "content": "ECE 0.37 的数据统计是否存在偏差？需要重新验证吗？",
+      "related_round": 2,
+      "context": {}
+    },
+    {
+      "message_id": "msg_0002",
+      "timestamp": "2026-03-11T08:27:19.546156",
+      "sender_id": "Casey",
+      "receiver_id": "LOGOS",
+      "message_type": "clarification",
+      "content": "数据已确认。问题在模型本身，不是统计误差。",
+      "related_round": 2,
+      "context": {}
+    }
+  ],
+  "final_status": "rejected",
+  "execution_gate_passed": false
+}
