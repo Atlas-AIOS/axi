@@ -1,0 +1,12 @@
+{
+  "shadow_id": "SHADOW-R17-3-PROD",
+  "config": {
+    "deliberation_threshold": 70.0,
+    "review_threshold": 80.0
+  },
+  "start_date": "2026-03-11",
+  "end_date": "2026-04-10",
+  "total_samples": 50,
+  "status": "completed",
+  "observations_file": "SHADOW-R17-3-PROD_observations.jsonl"
+}
