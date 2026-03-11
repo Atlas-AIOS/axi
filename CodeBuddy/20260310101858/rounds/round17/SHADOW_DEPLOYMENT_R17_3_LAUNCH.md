@@ -38,31 +38,84 @@
 
 ---
 
-## 观察目标
+## 验收口径
 
-### 本轮目标 (30天后验收)
+### 🔍 阶段性观察目标 (中期检查参考)
 
-| 指标 | 当前值 | 本轮目标 | 最终目标 |
-|------|--------|----------|----------|
-| False-Block Rate | 16% | **≤ 15%** | ≤ 15% |
-| Decision Alignment | 38% | **≥ 60%** | ≥ 75% |
-| Accepted-Risk Cases | 7 | 保持 5-10 | 保持合理水平 |
-| Extra Rounds | - | ≤ 0.4 | ≤ 0.4 |
+用于 15 天中期检查，判断趋势方向：
 
-### 通过标准
+| 指标 | 当前值 | 观察目标 | 说明 |
+|------|--------|----------|------|
+| False-Block Rate | 16% | **≤ 15%** | 接近门槛即可 |
+| Decision Alignment | 38% | **≥ 60%** | 确认改善趋势 |
+| Accepted-Risk Cases | 7 | 5-12 | 不过度漏检即可 |
+| Extra Rounds | - | ≤ 0.5 | 中期可略宽松 |
 
-**Promote (晋升生产默认)**: 需同时满足
-- FB Rate ≤ 15%
-- Alignment ≥ 75%
-- 30天后 Accepted-Risk 验证完成
+### ⭐ Promote 正式门槛 (30天后判定)
 
-**Extend (延长观察)**: 如
-- FB Rate 15-20% (接近但未达标)
-- Alignment 60-75% (改善但未达标)
+**必须同时满足**，缺一不可：
 
-**Retune (再次调参)**: 如
+| 门槛 | 数值 | 来源 |
+|------|------|------|
+| False-Block Rate | **≤ 15%** | Round 17 原始标准 |
+| Decision Alignment | **≥ 75%** | Round 17 原始标准 |
+| Extra Rounds Ratio | **≤ 40%** | Round 17 原始标准 |
+| 样本数 | **≥ 50** | Round 17 原始标准 |
+| 运行天数 | **≥ 30** | Round 17 原始标准 |
+| Accepted-Risk 验证 | **完成** | 30天后验证
+
+### 30天判定标准
+
+**Promote (晋升生产默认)**: 全部正式门槛达标
+
+**Extend (延长观察)**: 
+- FB Rate ≤ 15% 达标，但 Alignment 60-75% (接近但未达 75%)
+- 或总样本/天数达标，但 Accepted-Risk 验证未完成
+
+**Retune (再次调参)**: 
 - FB Rate > 20% (改善不足)
 - Alignment < 60% (方向错误)
+- 或特定 source/topic 误差仍显著集中
+
+## Source/Topic 细分监控 (重点盯防)
+
+> ⚠️ **关键提醒**: 即使总 FB Rate 达标，若误差集中在特定来源或议题类型，仍可能导致结构性偏差。
+
+### Source 分桶观察
+
+Round 17.1 归因显示 live_manual 是主要误拦来源 (40% FB Rate)。本轮需确认是否改善：
+
+| Source | Round 17 FB Rate | 本轮目标 | 告警线 |
+|--------|------------------|----------|--------|
+| live_manual | 40% | ≤ 20% | > 30% 🔴 |
+| live_auto | 40% | ≤ 20% | > 25% 🟡 |
+| replay_real | 20% | ≤ 15% | > 20% 🟡 |
+
+**判定规则**:
+- live_manual 仍 > 30% → 需下调至 65 或启用 source-aware 校准
+- live_auto 恶化 > 25% → 回滚 deliberation 调整
+
+### Topic 分桶观察
+
+Round 17.1 归因显示 strategic_initiative / technical_decision 分歧率异常高：
+
+| Topic Type | 分歧率 (R17) | 本轮目标 | 告警线 |
+|------------|--------------|----------|--------|
+| strategic_initiative | 100% (6/6) | ≤ 50% | > 70% 🔴 |
+| technical_decision | 83% (5/6) | ≤ 50% | > 70% 🔴 |
+| compliance_check | 78% (7/9) | ≤ 50% | > 60% 🟡 |
+| resource_allocation | - | ≤ 30% | > 40% 🟡 |
+
+**判定规则**:
+- 任何 topic 分歧率仍 > 70% → 需启用 topic-aware margin 调整
+- strategic_initiative 持续 100% → P2 措施强制启动
+
+### 细分监控检查清单
+
+- [ ] 每 10 个样本检查一次 source 分桶 FB Rate
+- [ ] 每 10 个样本检查一次 topic 分桶分歧率
+- [ ] 若 live_manual 连续 3 个样本误拦 → 标记告警
+- [ ] 若 strategic_initiative 连续 2 个分歧 → 标记告警
 
 ---
 
@@ -95,6 +148,27 @@
 
 ---
 
+## 验收口径速查
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  阶段性观察目标 (15天检查)                                   │
+│  - FB Rate ≤ 15%                                            │
+│  - Alignment ≥ 60% (趋势确认)                                │
+├─────────────────────────────────────────────────────────────┤
+│  Promote 正式门槛 (30天判定)                                 │
+│  - FB Rate ≤ 15%                                            │
+│  - Alignment ≥ 75% ⭐ 关键差距                               │
+│  - Extra Rounds ≤ 40%                                       │
+│  - 样本 ≥ 50, 天数 ≥ 30                                     │
+│  - Accepted-Risk 验证完成                                    │
+├─────────────────────────────────────────────────────────────┤
+│  细分盯防                                                   │
+│  - live_manual FB Rate ≤ 20% (原 40%)                       │
+│  - strategic_initiative 分歧 ≤ 50% (原 100%)                │
+└─────────────────────────────────────────────────────────────┘
+```
+
 ## 一句话
 
-> **Round 17.2 完成了 P0 定点修复，现在用 deliberation=70/review=80 进入新一轮 Shadow。目标是 FB≤15%, Alignment≥60%，暂不下调 review，暂不 Promote。**
+> **Round 17.3 已启动：deliberation=70/review=80 进入新一轮 Shadow。正式 Promote 门槛是 Alignment≥75% (不是 60%)。同步盯防 live_manual 和 strategic_initiative 细分指标，30天后三选一。**
