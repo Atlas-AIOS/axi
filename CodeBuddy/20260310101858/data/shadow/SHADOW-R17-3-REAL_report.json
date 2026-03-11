@@ -1,0 +1,59 @@
+{
+  "shadow_id": "SHADOW-R17-3-REAL",
+  "config": {
+    "deliberation_threshold": 70.0,
+    "review_threshold": 80.0
+  },
+  "generated_at": "2026-03-11T12:50:47.458260",
+  "start_date": "2026-03-11",
+  "end_date": "2026-04-09",
+  "total_samples": 50,
+  "metrics": {
+    "alignment_rate": 0.76,
+    "fb_rate": 0.16,
+    "accepted_risk_count": 4,
+    "avg_extra_rounds": 0.14
+  },
+  "source_breakdown": {
+    "live_manual": {
+      "count": 24,
+      "fb_rate": 0.2083
+    },
+    "live_auto": {
+      "count": 13,
+      "fb_rate": 0.2308
+    },
+    "replay_real": {
+      "count": 13,
+      "fb_rate": 0.0
+    }
+  },
+  "topic_breakdown": {
+    "strategic_initiative": {
+      "count": 7,
+      "alignment": 0.7143
+    },
+    "technical_decision": {
+      "count": 10,
+      "alignment": 0.9
+    },
+    "compliance_check": {
+      "count": 11,
+      "alignment": 0.8182
+    },
+    "resource_allocation": {
+      "count": 12,
+      "alignment": 0.75
+    },
+    "routine_approval": {
+      "count": 10,
+      "alignment": 0.6
+    }
+  },
+  "verdict": {
+    "fb_threshold_met": false,
+    "alignment_threshold_met": true,
+    "promote_ready": false,
+    "recommendation": "Extend shadow period"
+  }
+}
