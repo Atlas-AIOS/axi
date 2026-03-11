@@ -104,6 +104,19 @@ Shadow 的作用是**验证离线调参是否泛化**，而非趋势变好就直
 
 ---
 
+## 状态确认 (可落档)
+
+```
+Configuration:    deliberation=70, review=80
+Operational mode: Shadow only
+Decision:         Extend shadow period
+Next gate:        30天正式验收，三选一 Promote / Extend / Retune
+```
+
+**核心原则**: 趋势改善 ≠ Promote 就绪；只有正式门槛全部达成，才允许 Promote。
+
+---
+
 ## 一句话
 
 > **Round 17.3 正式判定：继续 Shadow 验证，不 Promote。结构性改善已确认 (live_manual FB 40%→14.3%)，但正式门槛仍未达成 (Alignment 60% < 75%)。30天后验收，若仍不达标优先 Extend。**
